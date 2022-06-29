@@ -36,19 +36,25 @@ function App() {
 					>
 						<div className="title-grid">
 							<span className="title">{item.title}</span>
-							<span className="title">
-								{openList[index] ? '☑️' : '✔️'}
+							<span
+								className={`title${
+									openList[index] ? ' rotate' : ''
+								}`}
+							>
+								⌃
 							</span>
 						</div>
 
-						{openList[index] && (
-							<>
-								<div className="content">{item.content}</div>
-								<div className="content">{item.content}</div>
-								<div className="content">{item.content}</div>
-								<div className="content">{item.content}</div>
-							</>
-						)}
+						<div
+							className={`content-grid${
+								openList[index] ? ' open' : ''
+							}`}
+						>
+							<div className="content">{item.content}</div>
+							<div className="content">{item.content}</div>
+							<div className="content">{item.content}</div>
+							<div className="content">{item.content}</div>
+						</div>
 					</div>
 				))}
 			</main>
