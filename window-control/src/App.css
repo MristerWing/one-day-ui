@@ -1,0 +1,15 @@
+.App {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	width: 30vmin;
+	height: 30vmin;
+
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
